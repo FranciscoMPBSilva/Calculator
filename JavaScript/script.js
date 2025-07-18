@@ -37,7 +37,7 @@ function backspace() {
 
 function calculate() {
     try {
-        const result = eval(screen.innerText);
+        const result = math.evaluate(screen.innerText);
         screen.innerText = Number.isInteger(result) ? result : result.toFixed(3);
         resetValue = true;
     } catch (e) {
