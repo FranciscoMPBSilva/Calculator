@@ -4,6 +4,10 @@ const operators = ['+', '-', '*', '/'];
 
 
 function changeScreen(character) {
+    if (screen.innerText === 'Erro' && operators.includes(character)) {
+        screen.innerText = character.slice(0, -1);
+    }
+
     if (!resetValue) {
         if (screen.innerText === '0' && !operators.includes(character)) {
             screen.innerText = character;
