@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <section class="calculator">
+        <div class="screen">
+            <h1 class="title">Calculator</h1>
+            <div class="calcScreen">
+                <p id="screen">0</p>
+            </div>
+        </div>
+        <div class="calc">
+            <div class="numbers">
+                <div class="numbers_1_3">
+                    <button id="butNum" class="bt" onclick="changeScreen('1')">1</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('2')">2</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('3')">3</button>
+                </div>
+                <div class="numbers_4_6">
+                    <button id="butNum" class="bt" onclick="changeScreen('4')">4</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('5')">5</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('6')">6</button>
+                </div>
+                <div class="numbers_7_9">
+                    <button id="butNum" class="bt" onclick="changeScreen('7')">7</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('8')">8</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('9')">9</button>
+                </div>
+                <div class="numbers_0">
+                    <button id="butNum" class="bt" onclick="changeScreen('0')">0</button>
+                    <button class="bt" onclick="changeScreen('.')">.</button>
+                    <button id="butSym" class="bt" onclick="calculate()">=</button>
+                </div>
+            </div>
+            <div class="symbols">
+                <div class="symbol">
+                    <button id="butSym" class="bt" onclick="changeScreen('+')">+</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('-')">-</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('*')">*</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('/')">/</button>
+                </div>
+            </div>
+        </div>
+        <div class="clear-back">
+            <button id="butClear" class="clear" onclick="cleanUp()">Clear</button>
+            <button id="butClear" class="clear" onclick="backspace()">←</button>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/mathjs@13.0.0/lib/browser/math.js"></script>
+<script src="../JavaScript/script.js"></script>
+
+</html>
