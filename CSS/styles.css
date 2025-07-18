@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(144, 209, 235);
 }
 
 
@@ -22,7 +23,7 @@ body {
     align-items: center;
     padding-bottom: 2rem;
     padding-top: 1.5rem;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(91, 100, 102);
     width: 22.5%;
     margin: 0 auto;
     border-radius: 5%;
@@ -61,6 +62,10 @@ body {
     cursor: pointer;
 }
 
+.calculator .bt:hover {
+    background-color: rgb(206, 229, 250);
+}
+
 .screen {
     margin-bottom: 1.5rem;
     width: 70%;
@@ -92,4 +97,8 @@ body {
     cursor: pointer;
     border-radius: 1rem;
     border-color: transparent;
+}
+
+.clear:hover {
+    background-color: rgb(206, 229, 250);
 }
