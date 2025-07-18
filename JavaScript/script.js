@@ -42,6 +42,7 @@ function calculate() {
         resetValue = true;
     } catch (e) {
         screen.innerText = 'Erro';
+        resetValue = true;
     }
 }
 
