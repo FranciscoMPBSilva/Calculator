@@ -23,7 +23,7 @@ body {
     align-items: center;
     padding-bottom: 2.5vh;
     padding-top: 2vh;
-    background-color: rgb(91, 100, 102);
+    background-color: rgb(91, 100, 102, 0.7);
     width: 40vh;
     height: auto;
     margin: 0 auto;

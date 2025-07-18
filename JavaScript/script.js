@@ -1,23 +1,47 @@
 const screen = document.getElementById("screen");
+let resetValue = false;
+const operators = ['+', '-', '*', '/'];
+
 
 function changeScreen(character) {
-    screen.innerHTML += character;
+    if (!resetValue) {
+        if (screen.innerText === '0' && !operators.includes(character)) {
+            screen.innerText = character;
+        } else {
+            screen.innerText += character;
+        }
+    }
+
+    if (resetValue) {
+        if (operators.includes(character)) {
+            screen.innerText += character;
+            resetValue = false;
+        } else {
+            screen.innerText = character;
+            resetValue = false;
+        }
+    }
 }
 
 function cleanUp() {
-    screen.innerHTML = '';
+    screen.innerText = '0';
 }
 
 function backspace() {
-    screen.innerHTML = screen.innerHTML.slice(0, -1);
+    if (screen.innerText.length > 1) {
+        screen.innerText = screen.innerText.slice(0, -1);
+    } else {
+        screen.innerText = '0';
+    }
 }
 
 function calculate() {
     try {
-        const result = eval(screen.innerHTML);
-        screen.innerHTML = Number.isInteger(result) ? result : result.toFixed(3);
+        const result = eval(screen.innerText);
+        screen.innerText = Number.isInteger(result) ? result : result.toFixed(3);
+        resetValue = true;
     } catch (e) {
-        screen.innerHTML = 'Erro';
+        screen.innerText = 'Erro';
     }
 }
 
