@@ -61,6 +61,8 @@ body {
     border-radius: 1.5vh;
     border-color: transparent;
     cursor: pointer;
+    font-family: 'Montserrat';
+    color: black;
 }
 
 .calculator .bt:hover {
@@ -94,10 +96,12 @@ body {
 
 .clear {
     width: 10vh;
-    height: 5vh;
+    height: 5.5vh;
     cursor: pointer;
     border-radius: 1vh;
     border-color: transparent;
+    font-family: 'Montserrat';
+    color: black;
 }
 
 .clear:hover {

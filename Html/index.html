@@ -15,43 +15,47 @@
         <div class="screen">
             <h1 class="title">Calculator</h1>
             <div class="calcScreen">
-                <p>ola</p>
+                <p id="screen"></p>
             </div>
         </div>
         <div class="calc">
             <div class="numbers">
                 <div class="numbers_1_3">
-                    <button class="bt">1</button>
-                    <button class="bt">2</button>
-                    <button class="bt">3</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('1')">1</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('2')">2</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('3')">3</button>
                 </div>
                 <div class="numbers_4_6">
-                    <button class="bt">4</button>
-                    <button class="bt">5</button>
-                    <button class="bt">6</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('4')">4</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('5')">5</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('6')">6</button>
                 </div>
                 <div class="numbers_7_9">
-                    <button class="bt">7</button>
-                    <button class="bt">8</button>
-                    <button class="bt">9</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('7')">7</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('8')">8</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('9')">9</button>
                 </div>
                 <div class="numbers_0">
-                    <button class="bt">0</button>
-                    <button class="bt">.</button>
-                    <button class="bt">=</button>
+                    <button id="butNum" class="bt" onclick="changeScreen('0')">0</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('.')">.</button>
+                    <button id="butSym" class="bt" onclick="calculate()">=</button>
                 </div>
             </div>
             <div class="symbols">
                 <div class="symbol">
-                    <button class="bt">+</button>
-                    <button class="bt">-</button>
-                    <button class="bt">*</button>
-                    <button class="bt">/</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('+')">+</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('-')">-</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('*')">*</button>
+                    <button id="butSym" class="bt" onclick="changeScreen('/')">/</button>
                 </div>
             </div>
         </div>
-        <button class="clear">Clear</button>
+        <div class="clear-back">
+            <button id="butClear" class="clear" onclick="cleanUp()">Clear</button>
+            <button id="butClear" class="clear" onclick="backspace()">←</button>
+        </div>
     </section>
 </body>
+<script src="../JavaScript/script.js"></script>
 
 </html>
