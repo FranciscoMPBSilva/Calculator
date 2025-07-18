@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+.montserrat-text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    background-color: rgb(63, 63, 63);
+    width: 22.5%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.calc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.symbols {
+    padding-left: 1rem;
+}
+
+.symbols .symbol {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator .bt {
+    width: 70px;
+    height: 70px;
+    margin: 0.2rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.screen {
+    margin-bottom: 1.5rem;
+    width: 70%;
+}
+
+.screen p {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: 'Montserrat';
+    font-size: 1.75rem;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.calcScreen {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    height: 4rem;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 1rem;
+}
+
+.clear {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 1rem;
+    border-color: transparent;
+}
